@@ -28,6 +28,26 @@ export default function ProfileScreen() {
               <Text>5 miles away</Text>
             </View>
           </View>
+          <View className="mt-6">
+            <Text className="text-lg font-bold">Interests</Text>
+            <View className="flex-row flex-wrap gap-2 mt-2">
+              <View className="bg-gray-200 rounded-full px-3 py-1">
+                <Text className="text-sm">Sports</Text>
+              </View>
+              <View className="bg-gray-200 rounded-full px-3 py-1">
+                <Text className="text-sm">Music</Text>
+              </View>
+              <View className="bg-gray-200 rounded-full px-3 py-1">
+                <Text className="text-sm">Reading</Text>
+              </View>
+              <View className="bg-gray-200 rounded-full px-3 py-1">
+                <Text className="text-sm">Traveling</Text>
+              </View>
+              <View className="bg-gray-200 rounded-full px-3 py-1">
+                <Text className="text-sm">Cooking</Text>
+              </View>
+            </View>
+          </View>
         </View>
       </View>
     </View>
