@@ -1,4 +1,12 @@
-import { View, Text, Image } from "react-native";
+import { View, Text, Image, ScrollView } from "react-native";
+
+const artists = [
+  { name: 'Artist 1', image: 'https://picsum.photos/seed/1/200/200' },
+  { name: 'Artist 2', image: 'https://picsum.photos/seed/2/200/200' },
+  { name: 'Artist 3', image: 'https://picsum.photos/seed/3/200/200' },
+  { name: 'Artist 4', image: 'https://picsum.photos/seed/4/200/200' },
+  { name: 'Artist 5', image: 'https://picsum.photos/seed/5/200/200' },
+];
 
 export default function ProfileScreen() {
   return (
@@ -47,6 +55,19 @@ export default function ProfileScreen() {
                 <Text className="text-sm">Cooking</Text>
               </View>
             </View>
+          </View>
+          <View className="mt-6">
+            <Text className="text-lg font-bold">My top Spotify artists</Text>
+            <ScrollView horizontal showsHorizontalScrollIndicator={false} className="mt-2">
+              <View className="flex-row gap-4">
+                {artists.map((artist) => (
+                  <View key={artist.name} className="items-center">
+                    <Image source={{ uri: artist.image }} className="w-24 h-24 rounded-lg" />
+                    <Text className="mt-2 text-sm">{artist.name}</Text>
+                  </View>
+                ))}
+              </View>
+            </ScrollView>
           </View>
         </View>
       </View>
