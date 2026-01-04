@@ -10,9 +10,12 @@ export default function ProfileScreen() {
           resizeMode="cover"
         />
         <View className="p-6">
-          <Text className="text-2xl font-bold text-center">Profile</Text>
+          <View className="flex-row items-baseline justify-center">
+            <Text className="text-3xl font-bold">John Doe,</Text>
+            <Text className="text-xl ml-2">28</Text>
+          </View>
         </View>
-      </View>
+        </View>
     </View>
   );
 }
