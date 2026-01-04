@@ -1,4 +1,4 @@
-import { View, Text, Image, ScrollView } from "react-native";
+import { View, Text, Image, ScrollView, TouchableOpacity } from "react-native";
 
 const artists = [
   { name: 'Artist 1', image: 'https://picsum.photos/seed/1/200/200' },
@@ -68,6 +68,17 @@ export default function ProfileScreen() {
                 ))}
               </View>
             </ScrollView>
+          </View>
+          <View className="flex-row justify-around items-center mt-8">
+            <TouchableOpacity className="w-16 h-16 rounded-full bg-red-100 items-center justify-center">
+              <Text className="text-red-500 text-3xl font-bold">×</Text>
+            </TouchableOpacity>
+            <TouchableOpacity className="w-20 h-20 rounded-full bg-blue-100 items-center justify-center">
+              <Text className="text-blue-500 text-3xl">★</Text>
+            </TouchableOpacity>
+            <TouchableOpacity className="w-16 h-16 rounded-full bg-green-100 items-center justify-center">
+              <Text className="text-green-500 text-3xl">♥</Text>
+            </TouchableOpacity>
           </View>
         </View>
       </View>
