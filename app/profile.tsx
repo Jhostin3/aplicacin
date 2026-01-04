@@ -14,8 +14,22 @@ export default function ProfileScreen() {
             <Text className="text-3xl font-bold">John Doe,</Text>
             <Text className="text-xl ml-2">28</Text>
           </View>
+          <View className="mt-6 space-y-2">
+            <View className="flex-row gap-2">
+              <Text className="font-bold">Profession:</Text>
+              <Text>Software Engineer</Text>
+            </View>
+            <View className="flex-row gap-2">
+              <Text className="font-bold">City:</Text>
+              <Text>San Francisco</Text>
+            </View>
+            <View className="flex-row gap-2">
+              <Text className="font-bold">Distance:</Text>
+              <Text>5 miles away</Text>
+            </View>
+          </View>
         </View>
-        </View>
+      </View>
     </View>
   );
 }
